@@ -294,7 +294,14 @@ gap: 15px;
     border: 1px solid #ffffff;
     color: #ffffff;
 }
+a:hover{
+   
+    border: 1px solid #191919;
+    border-radius: 10%;
+transform: scale(1.15);
+  
 
+}
 footer {
     padding: 15px;
     margin-top: 15px;
