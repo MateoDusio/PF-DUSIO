@@ -4,7 +4,6 @@
 .bg-danger {
     color: #e64545;
 }
-hover
 nav {
     font-family: 'Italiana', sans-serif;
     font-weight: bold;
@@ -126,7 +125,7 @@ width: 65%;
         "a1 a1 a6 a7";
 
 }
-
+hover
 
 .box img {
 
@@ -296,7 +295,7 @@ li a:hover{
    
     border: 1px solid #191919;
     border-radius: 10%;
-transform: scale(1.1);
+transform: scale(1.05);
   
 
 }
