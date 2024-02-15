@@ -311,7 +311,7 @@ li a:hover {
     border: 1px solid #191919;
     border-radius: 10%;
     transform: scale(1.05);
-    transition: 0.8s;
+    transition: 0.4s;
 
 
 }
@@ -335,6 +335,5 @@ footer .footer-icon {
 footer .footer-icon img {
     width: 50px;
     margin: 15px;
-    border: 1px solid #292727ac;
-    border-radius: 30%;
+  
 }
