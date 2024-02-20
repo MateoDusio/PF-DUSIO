@@ -1,0 +1,19 @@
+.nosotros {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nosotros-text {
+    font-family: 'Italiana', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: flex-start;
+    margin: 30px;
+
+}
+
+.nosotros img {
+    margin: 30px;
+    width: 600px;
+}

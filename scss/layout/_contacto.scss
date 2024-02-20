@@ -1,0 +1,65 @@
+.main-contact {
+
+    background-image: url(../assets/chad-montano-MqT0asuoIcU-unsplash.jpg );
+
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-contact div {
+    margin: 30px 30px;
+
+}
+
+.main-contact div input {
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.main-contact div textarea {
+    height: 150px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+
+.main-contact div button {
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.main-contact div button:hover {
+    background-color: #191919;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+li a:hover {
+
+    border: 1px solid #191919;
+    border-radius: 10%;
+    transform: scale(1.05);
+    transition: 0.4s;
+
+}

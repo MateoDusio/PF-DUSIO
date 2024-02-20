@@ -1,0 +1,41 @@
+.hero-container {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.hero-card {
+    display: flex;
+    border: 1px solid #e64545;
+}
+
+.hero-card img {
+    width: 450px;
+}
+
+.hero-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.hero-card-content p {
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+
+.hero-card-content h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.hero-card-content a {
+    text-decoration: none;
+    margin: auto;
+    background-color: #e64545;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+}

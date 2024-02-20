@@ -1,0 +1,63 @@
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+        " a8 a8 a2 a2  "
+        " a3 a4 a5 a5  "
+        "a1 a1 a6 a7";
+
+}
+ .box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box img {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    box-shadow: 3px 3px 3px 3px #19191941;
+    border-radius: 1%;
+    min-height: 400px;
+    max-height: 100%;
+
+}
+.b1 {
+    grid-area: a1;
+}
+
+.b2 {
+    grid-area: a2;
+}
+
+.b3 {
+    grid-area: a3;
+}
+
+.b4 {
+    grid-area: a4;
+}
+
+.b5 {
+    grid-area: a5;
+}
+
+.b6 {
+    grid-area: a6;
+}
+
+.b7 {
+    grid-area: a7;
+}
+
+.b8 {
+    grid-area: a8;
+}
