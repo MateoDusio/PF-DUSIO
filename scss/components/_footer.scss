@@ -7,15 +7,20 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+    & .footer-icon{
+        align-self: center;
+    
+    }
+    .footer-icon {
+        align-self: center;
+    
+    }
+    .footer-icon img {
+        width: 50px;
+        margin: 15px;
+      
+    }
 }
 
-footer .footer-icon {
-    align-self: center;
 
-}
 
-footer .footer-icon img {
-    width: 50px;
-    margin: 15px;
-  
-}
