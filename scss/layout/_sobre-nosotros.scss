@@ -1,6 +1,7 @@
-.nosotros {
-    display: flex;
-    flex-direction: row;
+.nosotros-body {
+    display:flex;
+    
+  
 
 }
 
@@ -13,7 +14,20 @@
 
 }
 
-.nosotros img {
+.nosotros-body img {
     margin: 30px;
     width: 600px;
+}
+@media (max-width:1200px){
+    .nosotros-body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 15px;
+        box-sizing: border-box;
+    }
+    .nosotros-body img {
+       
+        width: 90%;
+    }
 }

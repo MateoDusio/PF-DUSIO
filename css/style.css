@@ -52,6 +52,8 @@ footer .footer-icon img {
 
 .About {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -71,7 +73,7 @@ footer .footer-icon img {
 
 .About .about-text {
   font-family: "Italiana", sans-serif;
-  font-size: 24px;
+  /*font-size: 24px;*/
   font-weight: bold;
   margin: auto;
   margin-bottom: 15px;
@@ -82,33 +84,62 @@ footer .footer-icon img {
 
 .iframe {
   display: flex;
-  justify-content: space-evenly;
-  margin: 20px;
-  padding: 10px;
-}
-
-iframe {
-  width: 20%;
-  height: 300px;
-}
-
-.info-if {
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  margin-left: auto;
+  width: 100%;
 }
 
-.info-if p {
-  font-size: 18px;
+.container-iframe {
   text-align: center;
-  width: 65%;
+  width: 400px;
 }
 
-.nosotros {
+.container-iframe iframe {
+  width: 100%;
+}
+
+.p-iframe {
+  margin-top: 20px;
+  /* font-size: 18px;*/
+}
+
+.about-text {
+  font-family: "Italiana", sans-serif;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 50%;
+  font-size: 24px;
+}
+
+.p-iframe {
+  font-family: "Italiana", sans-serif;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .iframe {
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  .container-iframe {
+    width: 95%;
+  }
+}
+.nosotros-body {
   display: flex;
-  flex-direction: row;
 }
 
 .nosotros-text {
@@ -119,11 +150,23 @@ iframe {
   margin: 30px;
 }
 
-.nosotros img {
+.nosotros-body img {
   margin: 30px;
   width: 600px;
 }
 
+@media (max-width: 1200px) {
+  .nosotros-body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    box-sizing: border-box;
+  }
+  .nosotros-body img {
+    width: 90%;
+  }
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -151,18 +194,82 @@ iframe {
   max-height: 100%;
 }
 
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .hero-container {
   margin-top: 20px;
   align-items: center;
 }
 
-.hero-card {
+.hero-container .hero-card {
   display: flex;
-  border: 1px solid #e64545;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
-.hero-card img {
-  width: 450px;
+.img-card {
+  width: 35%;
+  animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .hero-card-content {
@@ -170,17 +277,20 @@ iframe {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 65%;
 }
 
 .hero-card-content p {
   text-align: center;
   font-size: 25px;
   width: 100%;
+  animation: slideDown 1s ease-out forwards;
 }
 
 .hero-card-content h2 {
   text-align: center;
   width: 100%;
+  animation: slideDown 1s ease-out forwards;
 }
 
 .hero-card-content a {
@@ -190,13 +300,26 @@ iframe {
   color: #ffffff;
   font-size: 20px;
   padding: 5px;
+  animation: slideUp 1s ease-out forwards;
 }
 
+@media (max-width: 950px) {
+  .hero-card {
+    flex-direction: column;
+  }
+  .hero-card-content {
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+  }
+  .img-card {
+    width: 70%;
+  }
+}
 .main-contact {
+  min-height: 800px;
   background-image: url(../assets/chad-montano-MqT0asuoIcU-unsplash.jpg);
   width: 100%;
-  height: 100vw;
-  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -296,7 +419,9 @@ nav {
   font-weight: bold;
   margin: auto;
   margin-bottom: 15px;
-  width: 50%;
+  width: 100%;
+  padding: 0px 15px;
+  box-sizing: border-box;
   height: auto;
   text-align: center;
 }

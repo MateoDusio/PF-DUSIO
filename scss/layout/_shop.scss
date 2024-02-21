@@ -1,15 +1,85 @@
+
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 .hero-container {
     margin-top: 20px;
     align-items: center;
 }
 
-.hero-card {
+.hero-container .hero-card {
     display: flex;
-    border: 1px solid #e64545;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 15px;
+    width: 100%;
 }
 
-.hero-card img {
-    width: 450px;
+ .img-card {
+    width: 35%;
+    animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .hero-card-content {
@@ -17,6 +87,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 65%;
 
 }
 
@@ -24,11 +95,13 @@
     text-align: center;
     font-size: 25px;
     width: 100%;
+    animation: slideDown 1s ease-out forwards;
 }
 
 .hero-card-content h2 {
     text-align: center;
     width: 100%;
+    animation: slideDown 1s ease-out forwards;
 }
 
 .hero-card-content a {
@@ -38,4 +111,21 @@
     color: #ffffff;
     font-size: 20px;
     padding: 5px;
+    animation: slideUp 1s ease-out forwards;
+  }
+
+@media (max-width:950px) {
+    .hero-card {
+        flex-direction: column;
+
+    }
+    .hero-card-content {
+        width: 100%;
+        padding: 0px 15px;
+        box-sizing: border-box;
+
+    }
+    .img-card{
+        width: 70%;
+    }
 }
