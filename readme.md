@@ -1,1 +1,1 @@
-Set-ExecutionPolicy RemoteSigned -Scope Process
+# Set-ExecutionPolicy RemoteSigned -Scope Process # permisos de terminal 
