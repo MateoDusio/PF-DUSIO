@@ -1,7 +1,7 @@
 {
   "name": "proyecto-boostrap",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pizza Fratelli es un sitio web dedicado a la comercializacion  de  pizzas. \r Con un diseño simple pero atractivo \r  Nuestro objetivo es proporcionar una plataforma fácil de usar para que los clientes exploren nuestro menú y realicen pedidos.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

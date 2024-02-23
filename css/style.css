@@ -465,7 +465,13 @@ iframe {
   justify-content: flex-start;
   margin: 30px;
 }
-
+.nosotros-title{
+  font-size: 50px;
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+  
+}
 .nosotros img {
   margin: 30px;
   width: 600px;
